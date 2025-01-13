@@ -126,4 +126,49 @@ nav ul li a:hover::after {
     width: 100%; /* Линията се разширява до пълната ширина на текста */
 }
 
+/* Скриване на top-line-div за мобилни устройства */
+@media (max-width: 768px) {
+    .top-line-div {
+        display: none;
+    }
+
+    nav ul {
+        display: none; /* Скриване на менюто по подразбиране */
+        flex-direction: column;
+        background-color: #fff; /* Задайте фонов цвят */
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%; /* Менюто да заема ширината */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul.active {
+        display: flex; /* Показване на менюто при активиране */
+    }
+
+    .menu-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background: #333;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .menu-button i {
+        margin-right: 10px;
+    }
+
+    nav img.logo {
+        max-width: 70%; /* Ограничение за логото */
+    }
+}
+
+
+
 /* ==================================Navigation END================================ */
