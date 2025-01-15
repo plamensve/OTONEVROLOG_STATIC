@@ -1,129 +1,171 @@
-body, html {
+/* Основен цвят */
+:root {
+    --main-color: #097b87;
+    --white: #ffffff;
+    --hover-color: #065f65;
+}
+
+/* За HTML и body */
+html, body {
+    height: 100%; /* Гарантира, че страницата запълва целия екран */
     margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column; /* Подрежда елементите вертикално */
+}
+
+/* За основния контейнер */
+main {
+    flex: 1; /* Основното съдържание заема останалото място */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
     width: 100%;
 }
 
-
-.top-line-div {
-    background-color: #F5ECD5;
-    color: #447e7f;
+/* Горен ред */
+.top-line {
+    background-color: var(--main-color);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
     padding: 10px 20px;
+    font-size: 14px;
+    align-items: center;
+}
+
+.contact-info,
+.social-icons {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Навигация */
+.main-nav {
+    background-color: var(--white);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    height: 14px;
+    padding: 1px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
-.top-line-ul {
+.logo {
+    height: 100px;
+}
+
+.menu {
+    display: flex;
+    gap: 1px;
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    align-items: center;
 }
 
-.top-line-ul li {
-    margin-right: 15px;
-    display: flex;
-    align-items: center;
-}
-
-.top-line-ul li i {
-    margin-right: 8px;
-    color: #447e7f;
-}
-
-.top-line-ul-social {
-    list-style: none;
-    display: flex; /* Подреждане в редица */
-    padding: 20px;
-    gap: 10px;
-    font-size: 25px;
-}
-
-#top-line-ul-li-1 {
+.menu a {
+    text-decoration: none;
+    color: var(--main-color);
     font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding: 1px 20px;
+    overflow: hidden;
 }
 
-#top-line-ul-li-2 {
-    font-weight: normal;
-}
-
-/* --------------------------------------------------------------------------------------------- */
-
-/*--------------------------- Logo --------------------------------------------------------------*/
-
-nav > img {
-    padding: 10px 20px;
-}
-
-nav .logo {
-    position: absolute; /* Изважда логото от потока на Flexbox */
-    left: 20px; /* Задава позиция вляво */
-    height: 60px; /* Размер на логото */
-    object-fit: contain; /* Пропорционално мащабиране на логото */
-}
-
-/*--------------------------------------------------------------------------------------------- */
-
-nav {
-    background-color: #447e7f;
-    display: flex;
-    padding: 0;
-    width: 100%;
-    height: 80px;;
-    align-items: center;
-    justify-content: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-    transition: color 0.3s ease;
-}
-
-nav ul li a {
-    position: relative; /* За да позиционираме псевдоелемента спрямо линка */
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-    transition: color 0.3s ease; /* Ефект за промяна на цвета */
-}
-
-nav ul li a::after {
-    content: ""; /* Празно съдържание за декоративната линия */
+.menu a::after {
+    content: '';
     position: absolute;
-    bottom: -3px; /* Позициониране точно под текста */
+    bottom: 0;
     left: 0;
-    width: 0; /* Започва с нулева ширина */
-    height: 2px; /* Дебелина на линията */
-    background-color: white; /* Цвят на линията */
-    transition: width 0.3s ease; /* Анимация при hover */
+    width: 0;
+    height: 2px; /* Височина на лентата */
+    background-color: var(--main-color);
+    transition: width 0.4s ease-in-out;
 }
 
-nav ul li a:hover {
-    color: #ffffff; /* Промяна на цвета на текста */
+.menu a:hover::after {
+    width: 100%; /* Лентата покрива цялата ширина на бутона */
 }
 
-nav ul li a:hover::after {
-    width: 100%; /* Линията се разширява до пълната ширина на текста */
+
+.menu a:hover {
+    border-color: var(--hover-color);
 }
 
-/* ==================================Navigation END================================ */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--main-color);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Респонсив стил */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: var(--white);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+
+footer {
+    background-color: #097b87; /* Основен цвят */
+    color: #ffffff; /* Бял текст */
+    padding: 20px 0; /* Вътрешни отстояния */
+    text-align: center; /* Центриране на текста */
+    font-size: 14px; /* Размер на шрифта */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Лека сянка над фуутера */
+    margin-top: auto; /* Премества footer-а в долната част */
+}
+
+footer p {
+    margin: 0; /* Премахване на допълнителни отстояния */
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center; /* Центрира иконите */
+    gap: 15px; /* Разстояние между иконите */
+    list-style: none;
+    margin: 10px 0; /* Отстояние отгоре и отдолу */
+    padding: 0;
+}
+
+footer .social-icons li {
+    display: inline-block;
+}
+
+footer .social-icons a {
+    color: #ffffff; /* Цвят на иконите */
+    font-size: 20px; /* Размер на иконите */
+    transition: color 0.3s ease; /* Плавен преход при hover */
+}
+
+footer .social-icons a:hover {
+    color: #065f65; /* Промяна на цвета при hover */
+}

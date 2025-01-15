@@ -8,38 +8,50 @@
     <title>Otonevrolog</title>
 </head>
 <body>
-<header>
-    <div class="top-line-div">
-        <ul class="top-line-ul">
-            <li><i class="fas fa-map-marker-alt"></i> <strong>гр. Русе, ул."Воден" № 6</strong></li>
-            <li><i class="fas fa-phone"></i> <strong>(+359) 88 4 424 123</strong></li>
-        </ul>
-        <ul class="top-line-ul-social">
-            <li><i class="fab fa-facebook-f"></i></li>
-            <li><i class="fab fa-instagram"></i></li>
-            <li><i class="fab fa-youtube"></i></li>
-        </ul>
-    </div>
+    <header>
+        <div class="top-line">
+            <ul class="contact-info">
+                <li><i class="fas fa-map-marker-alt"></i> Русе, ул. "Воден" №6</li>
+                <li><i class="fas fa-phone"></i> (+359) 883 427 273</li>
+            </ul>
+            <ul class="social-icons">
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+            </ul>
+        </div>
+        <nav class="main-nav">
+            <div class="logo-container">
+                <img src="images/logo-png.png" alt="Лого" class="logo">
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="menu">
+                <li><a href="index.html">НАЧАЛО</a></li>
+                <li><a href="#">ОТОНЕВРОЛОГИЯ</a></li>
+                <li><a href="#">УНГ</a></li>
+                <li><a href="contact.html">КОНТАКТИ</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav>
-        <img src="images/white-logo.png" alt="logo" class="logo"/>
-        <ul>
-            <li><a href="index.html">Начало</a></li>
-            <li><a href="contact.html">Контакти</a></li>
-        </ul>
-    </nav>
-</header>
 
 <main>
-    <section>
-        <h1>Welcome to Our Website</h1>
-        <p>Your one-stop solution for all your needs.</p>
-        <a href="/services/" class="btn">Explore Our Services</a>
+    <section class="first-section">
+        <img src="images/test.jpg" alt="front-photo" class="front-photo">
     </section>
 </main>
 
-<footer>
-    <p>&copy; 2025 Your Company Name. All rights reserved.</p>
-</footer>
+    <footer>
+        <ul class="social-icons">
+            <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+        <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+    </footer>
+
+    <script src="menu.js"></script>
 </body>
 </html>
