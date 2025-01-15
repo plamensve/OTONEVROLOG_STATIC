@@ -281,6 +281,7 @@ footer .social-icons a:hover {
 
     .menu-toggle {
         align-self: flex-end;
+        margin-top: -40px;
     }
 }
 
