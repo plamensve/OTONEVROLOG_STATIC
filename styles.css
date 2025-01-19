@@ -205,7 +205,7 @@ footer {
 .wrapper {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Увеличаване на разстоянието между елементите */
+    gap: 10px; /* Увеличаване на разстоянието между елементите */
     flex-wrap: wrap;
     margin-top: 20px; /* Добавяне на разстояние над бутоните */
 }
@@ -213,7 +213,6 @@ footer {
 .wrapper .button {
     display: flex;
     align-items: center;
-    justify-content: center;
     height: 50px;
     width: 50px;
     margin: 0 10px;
@@ -227,7 +226,7 @@ footer {
 }
 
 .wrapper .button:hover {
-    width: 200px; /* Увеличаване на широчината при hover */
+    width: 160px; /* Увеличаване на широчината при hover */
 }
 
 .wrapper .button .icon {
