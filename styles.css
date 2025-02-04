@@ -1,11 +1,11 @@
-@import "base/reset.css";
-@import "base/typography.css";
+@import "styles/base/reset.css";
+@import "styles/base/typography.css";
 
-@import "components/navigation.css";
+@import "styles/components/navigation.css";
 
-@import "general/layout.css";
-@import "general/site-header.css";
-@import "general/site-footer.css";
-@import "general/site-content.css";
+@import "styles/general/layout.css";
+@import "styles/general/site-header.css";
+@import "styles/general/site-footer.css";
+@import "styles/general/site-content.css";
 
-@import "pages/home.css";
+@import "styles/pages/home.css";
