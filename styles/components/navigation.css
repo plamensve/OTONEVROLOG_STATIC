@@ -131,6 +131,11 @@ label[for="main-nav-toggle"] {
     transform: scale(0.95);
 }
 
+.nav-text {
+    font-weight: bold;
+    color: #4f4d4d;
+}
+
 @media (width < 650px) {
     .top-lane {
         display: flex;
@@ -206,6 +211,7 @@ label[for="main-nav-toggle"] {
         text-align: center;
     }
 
+
     #main-nav-toggle:checked ~ .site .site-header label[for="main-nav-toggle"] .open {
         display: none;
     }
@@ -222,6 +228,13 @@ label[for="main-nav-toggle"] {
         margin-top: 1em;
     }
 
+    /*.left {*/
+    /*    display: none;*/
+    /*}*/
+
+    .right {
+        display: none;
+    }
 
 }
 
