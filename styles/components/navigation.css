@@ -7,7 +7,7 @@
 
 
 .site-header nav {
-    display: flex;
+    display: block;
 }
 
 .site-header nav ul {
@@ -15,10 +15,12 @@
 }
 
 .site-header nav li {
+    display: block;
     list-style: none;
     padding: 0.5em;
     background-color: rgb(9, 123, 135);
     border-radius: 0.3em;
+    width: 100%;
 }
 
 .site-header nav li:hover {
@@ -32,6 +34,11 @@
 .site-header nav a {
     text-decoration: none;
     color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0.2em 0; /* Запазва вертикално пространство */
+    text-align: center;
 }
 
 
