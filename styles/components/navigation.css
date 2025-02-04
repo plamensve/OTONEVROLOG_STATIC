@@ -1,6 +1,13 @@
 /* General styling for all elements inside nav */
 
+.site-header {
+    display: flex;
+    flex-direction: column;
+}
+
+
 .site-header nav {
+
 }
 
 .site-header nav ul {
@@ -42,6 +49,15 @@
     visibility: hidden;
     pointer-events: none;
 }
+
+body > div.site > header > label > span.open > img {
+    margin-top: -2em;
+}
+
+body > div.site > header > label > span.close > img {
+    margin-top: -2em;
+}
+
 
 label[for="main-nav-toggle"] {
     display: none;
@@ -86,7 +102,7 @@ label[for="main-nav-toggle"] {
     }
 
     .site-header .site-title img {
-        margin-top: 0.5em;
+        margin-top: 1em;
     }
 
 
