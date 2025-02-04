@@ -79,6 +79,9 @@ label[for="main-nav-toggle"] {
 }
 
 .top-lane {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: rgb(9, 123, 135);
     color: white;
     display: flex;
