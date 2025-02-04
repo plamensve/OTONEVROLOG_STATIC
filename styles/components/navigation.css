@@ -7,26 +7,33 @@
 
 
 .site-header nav {
-
+    display: flex;
 }
 
 .site-header nav ul {
-
+    cursor: pointer;
 }
 
 .site-header nav li {
-    display: block;
+    list-style: none;
+    padding: 0.5em;
+    background-color: rgb(9, 123, 135);
+    border-radius: 0.3em;
+}
+
+.site-header nav li:hover {
+    background-color: rgb(16, 137, 148);
+}
+
+.site-header nav li:active {
+    transform: scale(0.95);
 }
 
 .site-header nav a {
-    display: block;
-    padding: 0.3em 1em;
-    background-color: rgb(9, 123, 135);
-    color: white;
-    border-radius: 0.3em;
     text-decoration: none;
-    font-size: 0.8em;
+    color: white;
 }
+
 
 
 /* Specific styling for first level */
@@ -34,11 +41,11 @@
 .site-header nav > ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 3em;
 }
 
 .site-header nav > ul > li {
-    width: 9em;
+    width: 11em;
     text-align: center;
 }
 
@@ -119,11 +126,67 @@ label[for="main-nav-toggle"] {
     background-color: rgb(9, 123, 135);
     color: white;
     display: flex;
-    font-size: 0.7em;
-    padding: 0.8em;
+    font-size: 1em;
+    align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
+.left {
+    display: flex;
+    align-items: center;
+    gap: 0.1em;
+    margin-left: 2em;
+}
+
+.right {
+    display: flex;
+    padding: 1em;
+}
+
+.right p a {
+    margin-right: 2em;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 0.5em 1em;
+    display: inline-block;
+    border-radius: 0.5em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.right p a:hover {
+    background-color: rgb(16, 137, 148);
+}
+
+.right p a:active {
+    transform: scale(0.95);
+}
+
+
+.left p + span {
+    margin-left: 3em;
+}
+
+@media (width < 650px) {
+    .top-lane {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .top-lane .left {
+        margin-right: 2em;
+    }
+
+    .top-lane .right {
+        margin-left: 2.5em;
+    }
+}
+
+@media (width < 975px) {
+
+}
 
 
 
