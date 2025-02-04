@@ -236,6 +236,10 @@ label[for="main-nav-toggle"] {
         display: none;
     }
 
+    .front-text #ft-1 {
+        text-align: center;
+    }
+
 }
 
 
