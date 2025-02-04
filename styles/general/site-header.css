@@ -20,14 +20,15 @@
 
 @media (width < 430px ) {
     .site-header .site-title img {
-    width: 210px;
-    height: 60px;
-}
+        width: 210px;
+        height: 60px;
+    }
+
+
 }
 
 .site-header .site-title a {
     color: #369;
     text-decoration: none;
 }
-
 

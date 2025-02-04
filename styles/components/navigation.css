@@ -139,6 +139,40 @@ label[for="main-nav-toggle"] {
     margin-left: 2em;
 }
 
+.left p {
+    font-size: 1em;
+}
+
+@media (width < 420px) {
+    .left p {
+        font-size: 0.9em;
+    }
+}
+
+@media (width < 396px) {
+    .left p {
+        font-size: 0.8em;
+    }
+}
+
+@media (width < 370px) {
+    .left p {
+        font-size: 0.7em;
+    }
+}
+
+@media (width < 344px) {
+    .left p {
+        font-size: 0.6em;
+    }
+}
+
+@media (width < 328px) {
+    .left p {
+        font-size: 0.5em;
+    }
+}
+
 .right {
     display: flex;
     padding: 1em;
@@ -184,9 +218,6 @@ label[for="main-nav-toggle"] {
     }
 }
 
-@media (width < 975px) {
-
-}
 
 
 
