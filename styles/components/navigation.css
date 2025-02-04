@@ -90,6 +90,7 @@ label[for="main-nav-toggle"] {
     justify-content: space-between;
     flex-wrap: wrap;
     font-weight: bold;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.5);
 }
 
 .left {
@@ -241,6 +242,21 @@ label[for="main-nav-toggle"] {
 
     .front-text #ft-1 {
         text-align: center;
+    }
+
+    .top-lane {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: rgb(9, 123, 135);
+        color: white;
+        display: flex;
+        font-size: 1em;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-weight: bold;
+        box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.5);
     }
 
 }
