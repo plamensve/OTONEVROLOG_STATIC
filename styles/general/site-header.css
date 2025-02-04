@@ -1,0 +1,48 @@
+.site-header {
+    padding-bottom: 1em;
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.site-header .site-title {
+    margin-left: 1em;
+    margin-top: -0.4em;
+}
+
+.site-header .site-title img {
+    width: 180px;
+    height: 50px;
+}
+
+.site-header .site-title a {
+    color: #369;
+    text-decoration: none;
+}
+
+.site-header nav {
+    position: absolute;
+    right: 3%;
+    top: -10%;
+}
+
+@media (width < 1000px) {
+    .site-header nav {
+    position: absolute;
+    right: 3%;
+    top: 25%;
+}
+}
+
+@media (width < 960px) {
+    .site-header .site-title {
+        margin-left: 1em;
+        margin-top: 0.5em;
+    }
+}
+
+
+

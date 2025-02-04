@@ -2,114 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" type="image/png" href="images/favicon.ico">
-    <link rel="stylesheet" href="styles.css">
-    <title>Otonevrolog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Title</title>
 </head>
 <body>
-<header>
-    <div class="top-line">
-        <ul class="contact-info">
-            <li><i class="fas fa-map-marker-alt"></i> Русе, ул. "Воден" №6</li>
-            <li><i class="fas fa-phone"></i> (+359) 883 427 273</li>
-        </ul>
-        <ul class="social-icons">
-            <li><i class="fab fa-facebook-f"></i></li>
-            <li><i class="fab fa-instagram"></i></li>
-        </ul>
+    <input type="checkbox" name="main-nav-toggle" id="main-nav-toggle">
+    <div class="top-lane">
+        <p>гр. Русе, ул. Воден No.6 тел. 088 3 427 273</p>
+        <p>Facebook, Instagram</p>
     </div>
-    <nav class="main-nav">
-        <div class="logo-container">
-            <img src="images/logo-png.png" alt="Лого" class="logo">
-        </div>
-        <div class="logo-container-2">
-            <img src="images/front-l.jpg" alt="second-logo" style="width: 100px; height: 100px; padding-left: 300px">
-        </div>
-        <button class="menu-toggle" aria-label="Toggle menu">
-            <i class="fas fa-bars"></i>
-        </button>
-        <ul class="menu">
-            <li><a href="index.html">НАЧАЛО</a></li>
-            <li><a href="#">ОТОНЕВРОЛОГИЯ</a></li>
-            <li><a href="#">УНГ</a></li>
-            <li><a href="contact.html">КОНТАКТИ</a></li>
-        </ul>
-    </nav>
-</header>
+    <div class="site">
+        <header class="site-header">
 
-<main>
-    <section class="map-section">
-        <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d302.48594019175516!2d25.96379098846166!3d43.8546643263402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sbg!2sbg!4v1736959470084!5m2!1sbg!2sbg"
-                width="100%"
-                height="450"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </section>
+            <h1 class="site-title">
+                <img src="images/logo-transparent-cropped.png" alt="logo">
+            </h1>
 
-    <div class="info-section">
-        <div class="header-phone phone-info">
-            <span class="phone-text is-s">ОТОНЕВРОЛОГИЯ И УНГ<br><strong>(+359) 899 123 456</strong></span>
-        </div>
-        <div class="header-phone booking-info">
-            <a href="https://superdoc.bg/lekar/kristina-atanasova" target="_blank">
-                <span class="booking-text">ЗАПАЗИ ЧАС<br><strong>SUPERDOC</strong></span>
-            </a>
-        </div>
+            <label for="main-nav-toggle">
+                <span class="open"><img src="images/icons8-menu.svg" style="width: 30px; height: 30px"></span>
+                <span class="close"><img src="images/icons8-menu.svg" style="width: 30px; height: 30px"></span>
+            </label>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Отоневрология</a></li>
+                    <li><a href="#">УНГ</a></li>
+                    <li><a href="#">За Мен</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main class="site-content">
+            <article class="page">
+                <header class="page-header">
+                    <h2>Homepage</h2>
+                </header>
+                <section class="page-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, quia!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, quia!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, quia!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, quia!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, quia!</p>
+                </section>
+            </article>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2025 Всички права запазени</p>
+        </footer>
+
     </div>
 
-
-    <section class="first-section">
-        <img src="images/test.jpg" alt="front-photo" class="front-photo">
-    </section>
-</main>
-
-
-<footer>
-    <div class="wrapper">
-        <div class="button">
-            <a href="https://www.facebook.com/ung.atanasova.rousse" target="_blank">
-                <div class="icon">
-                    <i class="fab fa-facebook"></i>
-                </div>
-                <span class="w-s">Facebook</span>
-            </a>
-        </div>
-
-        <div class="button">
-            <a href="https://twitter.com" target="_blank">
-                <div class="icon">
-                    <i class="fab fa-twitter"></i>
-                </div>
-                <span class="w-s">Twitter</span>
-            </a>
-        </div>
-
-        <div class="button">
-            <a href="https://github.com" target="_blank">
-                <div class="icon">
-                    <i class="fab fa-github"></i>
-                </div>
-                <span class="w-s">Github</span>
-            </a>
-        </div>
-
-        <div class="button">
-            <a href="https://linkedin.com" target="_blank">
-                <div class="icon">
-                    <i class="fab fa-linkedin"></i>
-                </div>
-                <span class="w-s">LinkedIn.</span>
-            </a>
-        </div>
-    </div>
-</footer>
-
-<script src="menu.js"></script>
 </body>
 </html>

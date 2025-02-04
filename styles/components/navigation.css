@@ -1,0 +1,169 @@
+/* General styling for all elements inside nav */
+
+.site-header nav {
+}
+
+.site-header nav ul {
+
+}
+
+.site-header nav li {
+    display: block;
+}
+
+.site-header nav a {
+    display: block;
+    padding: 0.3em 1em;
+    background-color: rgb(9, 123, 135);
+    color: white;
+    border-radius: 0.3em;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+
+/* Specific styling for first level */
+
+.site-header nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.site-header nav > ul > li {
+    width: 9em;
+    text-align: center;
+}
+
+#main-nav-toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+label[for="main-nav-toggle"] {
+    display: none;
+    color: #fff;
+    border-radius: 0.3em;
+    padding: 0.5em 1.5em;
+}
+
+@media (hover: none) {
+
+    label[for="main-nav-toggle"] {
+        display: block;
+    }
+
+    label[for="main-nav-toggle"] .close {
+        display: none;
+    }
+
+    .site-header nav {
+        flex-basis: 100%;
+        display: none;
+    }
+
+    .site-header nav li {
+        flex-basis: 100%;
+    }
+
+    .site-header nav li a {
+        text-align: center;
+    }
+
+    #main-nav-toggle:checked ~ .site .site-header label[for="main-nav-toggle"] .open {
+        display: none;
+    }
+
+     #main-nav-toggle:checked ~ .site .site-header label[for="main-nav-toggle"] .close {
+        display: block;
+    }
+
+    #main-nav-toggle:checked ~ .site .site-header nav {
+        display: block;
+    }
+
+    .site-header .site-title img {
+        margin-top: 0.5em;
+    }
+
+
+}
+
+@media (hover: hover) {
+    .site-header nav {
+        display: block;
+    }
+}
+
+
+.top-lane {
+    background-color: rgb(9, 123, 135);
+    color: white;
+    display: flex;
+    font-size: 0.7em;
+    padding: 0.8em;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
