@@ -152,16 +152,18 @@
     margin-top: 2em;
 }
 
+/* При ховър размяна на цветовете */
+.healee-info #h-4:hover {
+    background-color: rgb(16, 137, 148);
+}
+
 /* Бял бутон с цветен текст */
 .healee-info #h-5 {
     background-color: white;
     border: 2px solid rgb(9, 123, 135);
     color: rgb(9, 123, 135);
-}
-
-/* При ховър размяна на цветовете */
-.healee-info #h-4:hover {
-    background-color: rgb(16, 137, 148);
+    margin-bottom: 2em;
+    font-weight: bold;
 }
 
 .healee-info #h-5:hover {
@@ -194,6 +196,8 @@
     gap: 1em;
     flex-wrap: wrap;
 }
+
+
 
 
 
