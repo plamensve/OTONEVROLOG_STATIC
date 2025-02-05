@@ -211,7 +211,7 @@
 
 .price select {
     width: 100%;
-    max-width: 100%;
+    max-width: 250px;
     padding: 10px;
     font-size: 16px;
     border: 2px solid #097b87;
