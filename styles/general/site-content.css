@@ -108,6 +108,10 @@
     border: 2px solid rgb(9, 123, 135);
 }
 
+#h-2 {
+    color: rgb(9, 123, 135);
+}
+
 .hi-img {
     display: flex;
     align-items: center;
@@ -147,6 +151,70 @@
     text-decoration: none;
     border-radius: 1.2em;
 }
+
+.hearlee-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.price label {
+    font-weight: bold;
+    color: #097b87;
+}
+
+.price select {
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #097b87;
+    border-radius: 8px;
+    background-color: white;
+    color: #097b87;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Ховър ефект */
+.price select:hover {
+    background-color: #f0fafa;
+    border-color: #065e64;
+}
+
+/* Фокус ефект */
+.price select:focus {
+    border-color: #054d53;
+    box-shadow: 0 0 5px rgba(9, 123, 135, 0.5);
+}
+
+/* Опциите в падащото меню */
+.price select option {
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+}
+
+/* Опциите при ховър */
+.price select option:hover {
+    background-color: #097b87;
+    color: white;
+}
+
 
 
 
