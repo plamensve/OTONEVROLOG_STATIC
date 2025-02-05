@@ -130,31 +130,66 @@
 }
 
 .healee-info #h-4 {
-    display: block;
-    background-color: rgb(9, 123, 135);
-    padding: 1em;
-    border-radius: 1.2em;
-    width: fit-content;
-    margin-top: 1em;
-    cursor: pointer;
+    color: white;
 }
 
+/* Основни стилове за бутоните */
+.healee-info #h-4,
+.healee-info #h-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(9, 123, 135);
+    border-radius: 1.2em;
+    width: 100%;
+    max-width: 250px;
+    min-width: 200px;
+    padding: 1em;
+    height: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    margin-top: 2em;
+}
+
+/* Бял бутон с цветен текст */
+.healee-info #h-5 {
+    background-color: white;
+    border: 2px solid rgb(9, 123, 135);
+    color: rgb(9, 123, 135);
+}
+
+/* При ховър размяна на цветовете */
 .healee-info #h-4:hover {
     background-color: rgb(16, 137, 148);
 }
 
-.healee-info #h-4 a {
-    display: block;
-    width: 100%;
-    height: 100%;
+.healee-info #h-5:hover {
+    background-color: rgb(9, 123, 135);
     color: white;
-    text-decoration: none;
-    border-radius: 1.2em;
 }
 
-.hearlee-price {
+/* Линковете да заемат цялата площ на бутоните */
+.healee-info #h-4 a,
+.healee-info #h-5 a {
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+    border-radius: inherit;
+}
+
+/* Линкът в #h-5 да променя цвета при ховър */
+.healee-info #h-5:hover a {
+    color: white;
+}
+
+.healee-price {
+    display: flex;
     align-items: center;
     gap: 1em;
     flex-wrap: wrap;
@@ -165,7 +200,6 @@
     flex-direction: column;
     align-items: center;
     gap: 0.5em;
-    font-family: Arial, sans-serif;
     font-size: 16px;
     color: #333;
 }
