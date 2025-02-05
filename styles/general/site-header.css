@@ -14,14 +14,14 @@
 }
 
 .site-header .site-title img {
-    width: 380px;
-    height: 100px;
+    width: 400px;
+    height: 160px;
 }
 
 @media (width < 430px ) {
     .site-header .site-title img {
         width: 210px;
-        height: 60px;
+        height: 100px;
     }
 
 
