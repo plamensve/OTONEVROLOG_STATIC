@@ -124,7 +124,6 @@
     height: 60px;
 }
 
-
 .healee-info #h-3 {
     max-width: 50ch;
 }
@@ -195,6 +194,17 @@
     align-items: center;
     gap: 1em;
     flex-wrap: wrap;
+}
+
+@media (hover: none) {
+    .healee-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: -1.5em;
+        padding-bottom: 1em;
+    }
 }
 
 
