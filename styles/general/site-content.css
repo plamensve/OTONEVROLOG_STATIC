@@ -3,6 +3,9 @@
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding-bottom: 5em;
+    background-size: cover;
+    transition: transform 0.2s ease-out;
 }
 
 .page-header {
@@ -84,3 +87,67 @@
     color: #4f4d4d;
     font-weight: bold;
 }
+
+.dr-info {
+    position: relative;
+    overflow: hidden;
+}
+
+.healee {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   margin: 0 auto;
+   gap: 2em;
+   width: fit-content;
+   padding: 1em;
+}
+
+.healee-hr {
+    border: 2px solid rgb(9, 123, 135);
+}
+
+.hi-img {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.hi-img span img {
+    width: 60px;
+    height: 60px;
+}
+
+
+.healee-info #h-3 {
+    max-width: 50ch;
+}
+
+.healee-info #h-4 {
+    display: block;
+    background-color: rgb(9, 123, 135);
+    padding: 1em;
+    border-radius: 1.2em;
+    width: fit-content;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.healee-info #h-4:hover {
+    background-color: rgb(16, 137, 148);
+}
+
+.healee-info #h-4 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    border-radius: 1.2em;
+}
+
+
+
+
