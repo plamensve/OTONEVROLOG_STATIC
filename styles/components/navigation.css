@@ -214,7 +214,7 @@ label[for="main-nav-toggle"] {
     .site-header nav li a {
         text-align: center;
     }
-
+/* тест */
 
     #main-nav-toggle:checked ~ .site .site-header label[for="main-nav-toggle"] .open {
         display: none;
