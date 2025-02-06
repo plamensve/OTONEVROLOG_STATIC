@@ -153,7 +153,7 @@
 
 /* При ховър размяна на цветовете */
 .healee-info #h-4:hover {
-    background-color: rgb(16, 137, 148);
+    background: linear-gradient(330deg, rgb(9, 123, 135), rgb(0, 180, 200), rgb(3, 78, 95));
 }
 
 /* Бял бутон с цветен текст */
@@ -195,6 +195,20 @@
     gap: 1em;
     flex-wrap: wrap;
 }
+
+.healee-price p {
+    background: linear-gradient(350deg, rgb(9, 123, 135), rgb(0, 180, 200), rgb(3, 78, 95));
+    transition: all 0.2s ease-in-out;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.healee-price p:active {
+    transform: scale(0.95);
+}
+
 
 @media (hover: none) {
     .healee-info {

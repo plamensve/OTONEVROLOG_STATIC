@@ -1,5 +1,4 @@
 .site-footer {
-    background-color: rgb(9, 123, 135);
     color: white;
     display: flex;
     justify-content: center;
@@ -8,3 +7,18 @@
     font-size: 0.8em;
 }
 
+@keyframes gradientAnimation {
+  0% {
+    background: linear-gradient(135deg, rgb(9, 123, 135), rgb(0, 180, 200), rgb(3, 78, 95));
+  }
+  50% {
+    background: linear-gradient(135deg, rgb(3, 78, 95), rgb(0, 150, 170), rgb(9, 123, 135));
+  }
+  100% {
+    background: linear-gradient(135deg, rgb(9, 123, 135), rgb(0, 180, 200), rgb(3, 78, 95));
+  }
+}
+
+.site-footer {
+  animation: gradientAnimation 5s infinite alternate;
+}
