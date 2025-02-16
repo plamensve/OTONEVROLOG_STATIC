@@ -1,11 +1,336 @@
-@import "base/reset.css";
-@import "base/typography.css";
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
 
-@import "components/navigation.css";
+* {
+    padding: 0;
+    margin: 0;
+}
 
-@import "general/layout.css";
-@import "general/site-header.css";
-@import "general/site-footer.css";
-@import "general/site-content.css";
+html {
+    box-sizing: border-box;
+}
 
-@import "pages/home.css";
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body, html {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: clamp(12px, 1.5vw, 14px);
+}
+
+input, textarea, a {
+    font: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    background-color: #F6F6F6;
+    flex: 1 1 auto;
+}
+
+header {
+}
+
+main {
+    flex-grow: 1;
+    background-color: white;
+}
+
+footer {
+
+}
+
+.top-lane {
+    display: flex;
+    justify-content: space-around;
+    gap: 6em;
+    padding: 1em 0;
+}
+
+.top-lane-wrapper-left {
+    display: flex;
+    gap: 2em;
+}
+
+.top-lane-wrapper-right {
+    display: flex;
+    gap: 1em;
+    font-size: 1.5em;
+}
+
+.top-lane p {
+    display: flex;
+    gap: 0.5em;
+    color: white;
+    font-weight: bold;
+}
+
+.top-lane i:not(.fa-facebook):not(.fa-square-instagram) {
+    color: #FF6B35;
+}
+
+
+.top-lane {
+    background-color: #007c8e;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 220px;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.right-side-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.phone-call p {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    font-size: 1.2em;
+    color: #007c8e;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.superdoc {
+    background-color: #007c8e;
+    border-radius: 2em;
+    cursor: pointer;
+    margin-left: 3em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.1);
+    border: 2px solid white;
+    display: inline-block;
+    text-align: center;
+    padding: 1.5em 7em;
+    position: relative;
+    flex-wrap: nowrap;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.superdoc a {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    inset: 0;
+    display: block;
+    flex-wrap: nowrap;
+    top: 25%;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Ефект при кликване */
+.superdoc:active {
+    transform: scale(0.95); /* Намаляване на размера */
+    box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    padding: 1.5em 0 1.5em 2em;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5em;
+}
+
+nav img {
+    width: 250px;
+    height: 70px;
+}
+
+nav ul {
+    display: flex;
+    gap: 2em;
+    font-weight: bold;
+    list-style: none;
+}
+
+nav ul li {
+     flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.4em;
+    color: #007C8E;
+}
+
+/* ------------------ MAIN SECTION --------------------------- */
+
+.hero {
+    height: 45dvh;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.hero p {
+    font-size: 4.5em;
+    font-weight: bold;
+    color: #007C8E;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+#otonevrologiya {
+    color: #FF6B35;
+    text-shadow: 2px 2px 5px rgba(255, 107, 53, 0.3);
+}
+
+.avatar {
+    width: clamp(120px, 20vw, 350px); /* Минимален 120px, динамично 20vw, максимален 350px */
+    height: clamp(120px, 20vw, 350px);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #007C8E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Снимката вътре също ще се адаптира */
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

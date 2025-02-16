@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-            <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BF0FPQ3HKR"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -22,61 +22,53 @@
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
-
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
     <title>Д-р Кристина Атанасова</title>
 </head>
 <body>
-    <input type="checkbox" name="main-nav-toggle" id="main-nav-toggle">
-    <div class="top-lane">
 
-        <div class="left">
-
-            <span><img src="../images/icons8-address-100.png" alt="address-icon" style="width: 50px; height: 50px"></span>
-            <p>гр. Русе, ул. Воден № 6</p>
-
-            <span><img src="../images/icons8-phone-100%20(1).png" alt="address-icon" style="width: 50px; height: 50px"></span>
-            <p>088 3 123 345</p>
-
+    <header>
+        <div class="top-lane">
+            <div class="top-lane-wrapper-left">
+                <p><span id="fa-location"><i class="fa-solid fa-location-dot"></i></span><span id="location-info">гр. Русе, ул. "Воден"</span></p>
+                <p class="email"><span id="fa-envelope"><i class="fa-solid fa-envelope"></i></span><span id="envelope-info">svetoslavov.dev@gmail.com</span></p>
+                <p><span id="fa-business-time"><i class="fa-solid fa-business-time"></i></span><span id="business-time">Понеделник до Петък от 14:00 - 17:00</span></p>
+            </div>
+            <div class="top-lane-wrapper-right">
+                <p><i class="fa-brands fa-facebook"></i></p>
+                <p><i class="fa-brands fa-square-instagram"></i></p>
+            </div>
         </div>
-
-        <div class="right">
-            <p><a href="https://superdoc.bg/lekar/kristina-atanasova" target="_blank">Запази час в Superdoc</a></p>
-        </div>
-
-    </div>
-
-    <div class="site">
-        <header class="site-header">
-
-            <h1 class="site-title">
-                <a href="../index.html"><img src="../images/logo-png.png" alt="logo"></a>
-            </h1>
-
-            <label for="main-nav-toggle">
-                <span class="open">
-                    <img src="../images/icons8-menu.svg" style="width: 70px; height: 70px" alt="test">
-                </span>
-
-                <span class="close">
-                    <img src="../images/icons8-menu.svg" style="width: 70px; height: 70px" alt="test">
-                </span>
-            </label>
-
-            <nav class="main-nav">
+        <div class="navigation">
+            <nav>
+                <a href="../index.html"><img src="../images/logo-transparent-cropped.png" alt=""></a>
                 <ul>
-                    <li><a href="../index.html">НАЧАЛО</a></li>
-                    <li><a href="otonevrologiya.html">ОТОНЕВРОЛОГИЯ</a></li>
-                    <li><a href="ung.html">УНГ</a></li>
-                    <li><a href="contacts.html">КОНТАКТИ</a></li>
+                    <li><a href="../pages/otonevrologiya.html">ОТОНЕВРОЛОГИЯ</a></li>
+                    <li><a href="../pages/ung.html">УНГ</a></li>
+                    <li><a href="#">ЗА МЕН</a></li>
+                    <li><a href="../pages/contacts.html">КОНТАКТИ</a></li>
                 </ul>
             </nav>
+            <div class="right-side-wrapper">
+                <div class="phone-call">
+                    <p>Запазете час на телефон</p>
+                    <p><i class="fa-solid fa-phone"></i>(+359) 88 3 427 273</p>
+                </div>
+                <div class="superdoc">
+                    <a href="https://superdoc.bg/lekar/kristina-atanasova" target="_blank">Запазете час в Superdoc</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-        </header>
-
-        <main class="site-content">
+    <main class="site-content">
             <article class="page">
                 <header class="page-header">
                     <h2>Контакти</h2>
@@ -98,13 +90,11 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, quia!</p>
                 </section>
             </article>
-        </main>
+    </main>
 
-        <footer class="site-footer">
+    <footer class="site-footer">
             <p>&copy; 2025 Всички права запазени</p>
-        </footer>
-
-    </div>
+    </footer>
 
 </body>
 </html>
