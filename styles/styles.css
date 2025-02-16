@@ -87,7 +87,11 @@ footer {
     justify-content: center;
     gap: 220px;
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
+
 
 .right-side-wrapper {
     display: flex;
@@ -133,9 +137,17 @@ footer {
 
 /* Ефект при кликване */
 .superdoc:active {
-    transform: scale(0.95); /* Намаляване на размера */
+    transform: scale(0.35); /* Намаляване на размера */
     box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.2);
 }
+
+.superdoc:hover {
+    background-color: #00a1b5; /* По-светъл нюанс на синьото */
+    transform: scale(1.02); /* Леко увеличение */
+    box-shadow: 0 0 1.5em 0 rgba(0, 124, 142, 0.5); /* По-интензивен блясък */
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+}
+
 
 nav {
     display: flex;
@@ -178,6 +190,75 @@ nav ul li a {
     gap: 50px;
     padding-top: 2em;
     padding-bottom: 2em;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes moveDots1 {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(15px, -15px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes moveDots2 {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-60px, 60px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes moveDots3 {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(20px, 5px); }
+    100% { transform: translate(0, 0); }
+}
+
+
+.hero::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #007C8E;
+    border-radius: 50%;
+    top: 10%;
+    left: 5%;
+    z-index: 2;
+    animation: moveDots1 3s infinite ease-in-out alternate;
+    box-shadow:
+        30px 40px 0 #FF6B35,
+        80px 20px 0 #007C8E,
+        130px 90px 0 rgba(255, 107, 53, 0.6),
+        200px 150px 0 rgba(0, 124, 142, 0.5),
+        250px 60px 0 #FF6B35,
+        300px 120px 0 #007C8E,
+        350px 180px 0 rgba(255, 107, 53, 0.3),
+        400px 30px 0 rgba(0, 124, 142, 0.6),
+        450px 100px 0 #FF6B35,
+        500px 50px 0 rgba(0, 124, 142, 0.4),
+        550px 200px 0 #007C8E;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #FF6B35;
+    border-radius: 50%;
+    top: 50%;
+    left: 20%;
+    z-index: 2;
+    animation: moveDots2 4s infinite ease-in-out alternate;
+    box-shadow:
+        40px 60px 0 rgba(0, 124, 142, 0.5),
+        90px 30px 0 rgba(255, 107, 53, 0.3),
+        150px 110px 0 #007C8E,
+        220px 160px 0 rgba(0, 124, 142, 0.4),
+        270px 80px 0 #FF6B35,
+        320px 140px 0 rgba(255, 107, 53, 0.5),
+        370px 190px 0 #007C8E,
+        420px 40px 0 rgba(0, 124, 142, 0.3),
+        470px 120px 0 rgba(255, 107, 53, 0.6);
 }
 
 .hero p {
@@ -193,6 +274,8 @@ nav ul li a {
     color: #FF6B35;
     text-shadow: 2px 2px 5px rgba(255, 107, 53, 0.3);
 }
+
+
 
 .avatar {
     width: min(30vw, 320px); /* Максимален размер 220px, но адаптивен спрямо екрана */
