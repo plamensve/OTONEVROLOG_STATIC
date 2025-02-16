@@ -170,7 +170,7 @@ nav ul li a {
 /* ------------------ MAIN SECTION --------------------------- */
 
 .hero {
-    height: 45dvh;
+    height: auto;
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     display: flex;
     justify-content: center;
@@ -195,8 +195,8 @@ nav ul li a {
 }
 
 .avatar {
-    width: min(30vw, 220px); /* Максимален размер 220px, но адаптивен спрямо екрана */
-    height: min(30vw, 220px);
+    width: min(30vw, 320px); /* Максимален размер 220px, но адаптивен спрямо екрана */
+    height: min(30vw, 320px);
     border-radius: 50%;
     overflow: hidden;
     border: 4px solid #007C8E;
