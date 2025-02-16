@@ -238,28 +238,6 @@ nav ul li a {
         550px 200px 0 #007C8E;
 }
 
-.hero::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    background-color: #FF6B35;
-    border-radius: 50%;
-    top: 50%;
-    left: 20%;
-    z-index: 2;
-    animation: moveDots2 4s infinite ease-in-out alternate;
-    box-shadow:
-        40px 60px 0 rgba(0, 124, 142, 0.5),
-        90px 30px 0 rgba(255, 107, 53, 0.3),
-        150px 110px 0 #007C8E,
-        220px 160px 0 rgba(0, 124, 142, 0.4),
-        270px 80px 0 #FF6B35,
-        320px 140px 0 rgba(255, 107, 53, 0.5),
-        370px 190px 0 #007C8E,
-        420px 40px 0 rgba(0, 124, 142, 0.3),
-        470px 120px 0 rgba(255, 107, 53, 0.6);
-}
 
 .hero p {
     font-size: 4.5em;
