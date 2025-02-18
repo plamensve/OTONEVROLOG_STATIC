@@ -44,6 +44,10 @@
     .phone-call {
         display: none;
     }
+
+    .superdoc {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 1350px) {
