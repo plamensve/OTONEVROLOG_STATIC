@@ -11,7 +11,7 @@
     min-height: 100dvh;
     background-color: #F6F6F6;
     flex: 1 1 auto;
-    padding-top: 220px;
+    padding-top: 200px;
 }
 
 
@@ -69,8 +69,10 @@
     min-height: 100dvh;
     background-color: #F6F6F6;
     flex: 1 1 auto;
-    padding-top: 260px;
 }
+    .hero-wrapper {
+        margin-top: 3em;
+    }
 
 }
 
@@ -103,7 +105,11 @@
         min-height: 100dvh;
         background-color: #F6F6F6;
         flex: 1 1 auto;
-        padding-top: 210px;
+        padding-top: 170px;
+    }
+
+    .hero {
+        padding-top: 0;
     }
 }
 

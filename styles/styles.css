@@ -33,7 +33,7 @@ body {
     min-height: 100dvh;
     background-color: #F6F6F6;
     flex: 1 1 auto;
-    padding-top: 170px;
+    padding-top: 160px;
 }
 
 header {
@@ -43,7 +43,6 @@ header {
     width: 100%;
     z-index: 1000;
     background: white; /* Или друг цвят, за да се отличава */
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     opacity: 0.97;
 }
 
