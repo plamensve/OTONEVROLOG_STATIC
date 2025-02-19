@@ -368,25 +368,87 @@ section.services h2 {
 }
 
 
-.main-services figure figcaption {
-    color: #007C8E;
-    padding: 1em;
-    margin-bottom: 2em;
-    text-align: left;
-    transition: color 0.3s ease;
-    height: 200px;
-    object-fit: cover;
+.main-services figure {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Гарантира, че figure ще заема пълната височина */
 }
 
-figcaption {
-    padding-right: 2em;
-    padding-bottom: 3em;
+.main-services figure figcaption {
+    min-height: 280px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Позволява figcaption да запълва наличното пространство */
+    padding: 2em;
+    align-items: flex-start;
+    text-align: left;
+    gap: 1em;
+}
+
+.main-services figure figcaption p {
+    flex-grow: 1;
 }
 
 figcaption h3 {
+    color: #007C8E;
+    font-weight: bold;
     font-size: 1.5em;
 }
 
+figcaption button {
+    background-color: #007c8e;
+    border-radius: 1em;
+    cursor: pointer;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.1);
+    border: 2px solid white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.8em 1em;
+    position: relative;
+    font-weight: bold;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.3s ease;
+}
+
+/* Псевдоелемент за стрелката */
+figcaption button::after {
+    content: "\2192"; /* Unicode за стрелка надясно (→) */
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #007c8e; /* Основният цвят */
+    background-color: white;
+    border-radius: 50%;
+    width: 1.8em;
+    height: 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.8em;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+}
+
+/* Ефект при кликване */
+figcaption button:active {
+    transform: scale(0.9);
+    box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Ефект при ховър */
+figcaption button:hover {
+    background-color: #00a1b5;
+    transform: scale(1.02);
+    box-shadow: 0 0 1.5em 0 rgba(0, 124, 142, 0.5);
+}
+
+/* При ховър стрелката се мести леко надясно */
+figcaption button:hover::after {
+    transform: translateX(5px);
+}
 
 
 
