@@ -95,7 +95,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 1em;
     gap: 100px;
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     background-repeat: no-repeat;
