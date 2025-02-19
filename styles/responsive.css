@@ -9,6 +9,21 @@
 
 }
 
+@media (max-width: 1350px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero p {
+        text-align: center;
+        font-size: 3em;
+    }
+
+}
+
 @media (max-width: 800px) {
     nav {
         display: flex;
@@ -23,10 +38,7 @@
         padding-right: 1em;
     }
 
-    .navigation {
-        padding-left: 2em;
-        padding-right: 2em;
-    }
+
 
     .hero .hero-wrapper .p-1 {
     font-size: 2.5em;
@@ -45,6 +57,7 @@
 }
 
 @media (max-width: 750px) {
+
     .top-lane-wrapper-right {
         display: none;
     }
@@ -61,23 +74,12 @@
     .phone-call {
         display: none;
     }
-    
+
+    .superdoc {
+        margin-left: 0;
+    }
 }
 
-@media (max-width: 1350px) {
-    .hero {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .hero p {
-        text-align: center;
-        font-size: 3em;
-    }
-
-}
 
 
 @media (max-width: 500px) {
@@ -129,3 +131,119 @@
     line-height: 1.1em;
     }
 }
+
+
+
+
+/* Скриваме бургер бутона по подразбиране */
+.hamburger {
+    display: none;
+}
+
+/* Медия заявка за мобилни устройства */
+@media screen and (max-width: 750px) {
+    /* Центриране на навигацията */
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    /* Показваме хамбургер бутона */
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        z-index: 100;
+        position: relative;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 35px;
+        height: 4px;
+        background-color: #FF6B35; /* Оранжев цвят */
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Анимация при клик - превръщане в "X" */
+    .hamburger.active span:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0; /* Средната линия изчезва */
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    /* Менюто започва скрито */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #007c8e;
+        text-align: center;
+        padding: 0;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        align-items: center;
+    }
+
+    /* Когато е активно, менюто се показва */
+    .nav-links.active {
+        display: flex;
+    }
+
+    nav ul {
+        gap: 0;
+    }
+
+    /* Равни квадратчета за линковете */
+    .nav-links li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        width: 100%;
+        height: 60px; /* Фиксирана височина за равни квадратчета */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-links li:last-child {
+        border-bottom: none; /* Премахва долната граница на последния елемент */
+    }
+
+    .nav-links li a {
+        color: white;
+        font-size: 1.2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        transition: background 0.3s;
+    }
+
+    .nav-links li a:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+}
+
+
+
+/* Скриваме бургер бутона на десктоп */
+@media (hover: hover) and (min-width: 751px) {
+    .hamburger {
+        display: none !important;
+    }
+}
+
