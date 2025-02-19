@@ -322,8 +322,8 @@ section.services {
 }
 
 .services-wrapper img {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     animation: spin 7s linear infinite; /* Въртене за 5 секунди, безкрайно */
 }
 
