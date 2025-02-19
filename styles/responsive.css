@@ -35,14 +35,13 @@
 @media (max-width: 800px) {
     nav {
         display: flex;
+        flex-direction: column;
         width: 100%;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
-        padding: 2em 1em 0.1em 1em;
-
-        gap: 3em;
+        padding: 1em 1em 0.1em 1em;
+        gap: 1em;
     }
-
 
     .top-lane {
         padding-left: 1em;
@@ -52,10 +51,10 @@
 
 
     .hero .hero-wrapper .p-1 {
-    font-size: 3.5em;
-    font-weight: bold;
-    flex-direction: column;
-    line-height: 1.1em;
+        font-size: 3.5em;
+        font-weight: bold;
+        flex-direction: column;
+        line-height: 1.1em;
     }
 
     .hero .hero-wrapper .p-2 {
@@ -73,6 +72,9 @@
     flex: 1 1 auto;
 }
     .hero-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin-top: 3em;
     }
 
@@ -107,7 +109,7 @@
         min-height: 100dvh;
         background-color: #F6F6F6;
         flex: 1 1 auto;
-        padding-top: 140px;
+        padding-top: 180px;
     }
 
     .hero {
@@ -160,14 +162,12 @@
 
 @media (max-width: 420px) {
     .hero .hero-wrapper .p-1 {
-    font-size: 2em;
-    font-weight: bold;
-    flex-direction: column;
-    line-height: 1.1em;
+        font-size: 2em;
+        font-weight: bold;
+        flex-direction: column;
+        line-height: 1.1em;
     }
 }
-
-
 
 
 /* Скриваме бургер бутона по подразбиране */
@@ -241,6 +241,8 @@
         display: flex;
     }
 
+
+
     nav ul {
         gap: 0;
     }
@@ -284,6 +286,7 @@
         display: none !important;
     }
 }
+
 
 
 
