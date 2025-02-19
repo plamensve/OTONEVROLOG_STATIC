@@ -371,6 +371,7 @@ section.services h2 {
 .main-services figure figcaption {
     color: #007C8E;
     padding: 1em;
+    margin-bottom: 2em;
     text-align: left;
     transition: color 0.3s ease;
     height: 200px;
@@ -379,12 +380,13 @@ section.services h2 {
 
 figcaption {
     padding-right: 2em;
-    padding-bottom: 2em;
+    padding-bottom: 3em;
 }
 
 figcaption h3 {
     font-size: 1.5em;
 }
+
 
 
 
