@@ -5,6 +5,8 @@
         gap: 20px;
         padding-bottom: 2em;
     }
+
+
 }
 
 @media (max-width: 800px) {
@@ -25,6 +27,21 @@
         padding-left: 2em;
         padding-right: 2em;
     }
+
+    .hero .hero-wrapper .p-1 {
+    font-size: 3em;
+    font-weight: bold;
+    flex-direction: column;
+    line-height: 1.1em;
+    }
+
+    .hero .hero-wrapper .p-2 {
+        font-size: 1em;
+        font-style: italic;
+        gap: 0.2em;
+        justify-content: center;
+    }
+
 }
 
 @media (max-width: 750px) {
@@ -44,10 +61,7 @@
     .phone-call {
         display: none;
     }
-
-    .superdoc {
-        margin-left: 0;
-    }
+    
 }
 
 @media (max-width: 1350px) {
@@ -60,7 +74,7 @@
 
     .hero p {
         text-align: center;
-        font-size: 2em;
+        font-size: 3em;
     }
 
 }
@@ -99,3 +113,11 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .main-services {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+    }
+}

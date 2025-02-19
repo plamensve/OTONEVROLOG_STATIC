@@ -65,7 +65,7 @@ footer {
     font-size: 1.5em;
 }
 
-.top-lane p {
+.top-lane p  {
     display: flex;
     gap: 0.5em;
     color: white;
@@ -238,17 +238,39 @@ nav ul li a {
         550px 200px 0 #007C8E;
 }
 
-
-.hero p {
-    font-size: 4.5em;
-    font-weight: bold;
-    color: #007C8E;
+.hero-wrapper {
     display: flex;
     flex-direction: column;
+    gap: 1em;
+    text-align: right;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+.hero .hero-wrapper .p-1 {
+    font-size: 5em;
+    font-weight: bold;
+    flex-direction: column;
+    line-height: 1.1em;
+}
+
+.hero .hero-wrapper .p-2 {
+    font-size: 1.8em;
+    font-style: italic;
+    gap: 0.2em;
+    justify-content: flex-end;
+}
+
+
+.hero p {
+    color: #007C8E;
+    display: flex;
     text-align: right;
 }
 
-#otonevrologiya {
+
+#healthy-life {
     color: #FF6B35;
     text-shadow: 2px 2px 5px rgba(255, 107, 53, 0.3);
 }
@@ -272,6 +294,92 @@ nav ul li a {
     object-fit: cover;
 }
 
+
+/* -------------------------- SECTION SERVICES ---------------------------------------- */
+
+section.services {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 4em;
+}
+
+.services-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3em;
+}
+
+.services-wrapper p {
+    width: 70%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+#sw-main-p {
+    color: #FF6B35;
+}
+
+
+section.services h2 {
+    font-size: 2.5em;
+    color: #007C8E;
+    padding-bottom: 0.1em;
+}
+
+.main-services {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    gap: 3em;
+    margin-bottom: 5em;
+}
+
+.main-services figure {
+    max-width:400px;
+    width: 100%;
+    background-color: #eee;
+    border-radius: 0.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-services figure:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.main-services figure img {
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+
+.main-services figure figcaption {
+    color: #007C8E;
+    padding: 1em;
+    text-align: left;
+    transition: color 0.3s ease;
+    height: 200px;
+    object-fit: cover;
+}
+
+figcaption h3 {
+    font-size: 1.5em;
+}
 
 
 
