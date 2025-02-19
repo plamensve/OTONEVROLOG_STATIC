@@ -33,9 +33,17 @@ body {
     min-height: 100dvh;
     background-color: #F6F6F6;
     flex: 1 1 auto;
+    padding-top: 170px;
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: white; /* Или друг цвят, за да се отличава */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 main {
@@ -52,6 +60,7 @@ footer {
     justify-content: space-around;
     gap: 6em;
     padding: 1em 0;
+    cursor: pointer;
 }
 
 .top-lane-wrapper-left {
@@ -85,11 +94,13 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 220px;
+    padding-bottom: 1em;
+    gap: 100px;
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    cursor: pointer;
 }
 
 
@@ -179,6 +190,57 @@ nav ul li a {
     color: #007C8E;
 }
 
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+    font-size: 1.4em;
+    color: #007C8E;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links {
+    border: 2px solid #007C8E;
+    padding: 0.5em 2em;
+    border-radius: 2em;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 3px;
+    background-color: #007C8E;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+    font-size: 1.4em;
+    color: #007C8E;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a::after:hover {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 3px;
+    background-color: #FF6B35;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1);
+}
+
+
 
 /* ------------------ MAIN SECTION --------------------------- */
 
@@ -189,8 +251,8 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     gap: 50px;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 3em;
+    padding-bottom: 5em;
     position: relative;
     z-index: 1;
 }
@@ -317,6 +379,11 @@ section.services {
     padding-bottom: 3em;
 }
 
+.services-wrapper #span-bold span {
+    font-weight: bold;
+}
+
+
 @keyframes spin {
     1000% { transform: rotate(0deg); }
     0% { transform: rotate(360deg); }
@@ -334,8 +401,9 @@ section.services {
     justify-content: center;
     text-align: center;
     align-items: center;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-style: italic;
+    line-height: 1.5em;
 }
 
 #sw-main-p {
@@ -344,7 +412,7 @@ section.services {
 
 
 section.services h2 {
-    font-size: 2.5em;
+    font-size: 3.5em;
     color: #007C8E;
     padding-bottom: 0.1em;
 }
@@ -379,13 +447,13 @@ section.services h2 {
     border-top-right-radius: 0.5em;
     transition: transform 0.3s ease;
     object-fit: cover;
+    height: 400px;
 }
 
 
 .main-services figure {
     display: flex;
     flex-direction: column;
-    height: 100%; /* Гарантира, че figure ще заема пълната височина */
 }
 
 .main-services figure figcaption {
@@ -402,6 +470,7 @@ section.services h2 {
 
 .main-services figure figcaption p {
     flex-grow: 1;
+    font-size: 1.1em;
 }
 
 figcaption h3 {

@@ -5,6 +5,15 @@
         gap: 20px;
     }
 
+    body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    background-color: #F6F6F6;
+    flex: 1 1 auto;
+    padding-top: 250px;
+}
+
 
 }
 
@@ -40,18 +49,27 @@
 
 
     .hero .hero-wrapper .p-1 {
-    font-size: 2.5em;
+    font-size: 3.5em;
     font-weight: bold;
     flex-direction: column;
     line-height: 1.1em;
     }
 
     .hero .hero-wrapper .p-2 {
-        font-size: 1em;
+        font-size: 1.5em;
         font-style: italic;
         gap: 0.2em;
         justify-content: center;
     }
+
+    body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    background-color: #F6F6F6;
+    flex: 1 1 auto;
+    padding-top: 300px;
+}
 
 }
 
@@ -76,6 +94,15 @@
 
     .superdoc {
         margin-left: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100dvh;
+        background-color: #F6F6F6;
+        flex: 1 1 auto;
+        padding-top: 250px;
     }
 }
 
@@ -249,4 +276,7 @@
         display: none !important;
     }
 }
+
+
+
 
