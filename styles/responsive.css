@@ -35,10 +35,12 @@
 @media (max-width: 800px) {
     nav {
         display: flex;
-        justify-content: center;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
         padding: 2em 1em 0.1em 1em;
-        flex-direction: column;
-        gap: 1em;
+
+        gap: 3em;
     }
 
 
@@ -105,7 +107,7 @@
         min-height: 100dvh;
         background-color: #F6F6F6;
         flex: 1 1 auto;
-        padding-top: 170px;
+        padding-top: 140px;
     }
 
     .hero {
