@@ -121,7 +121,7 @@
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 420px) {
     .hero .hero-wrapper .p-1 {
     font-size: 2em;
     font-weight: bold;
