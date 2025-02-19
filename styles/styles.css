@@ -377,6 +377,11 @@ section.services h2 {
     object-fit: cover;
 }
 
+figcaption {
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
 figcaption h3 {
     font-size: 1.5em;
 }
