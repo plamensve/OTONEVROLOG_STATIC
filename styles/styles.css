@@ -245,6 +245,7 @@ nav ul li a {
     text-align: right;
     padding-left: 1em;
     padding-right: 1em;
+    position: relative;
 }
 
 
@@ -304,7 +305,7 @@ section.services {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 4em;
+    margin-top: 1em;
 }
 
 .services-wrapper {
@@ -314,6 +315,18 @@ section.services {
     align-items: center;
     padding-bottom: 3em;
 }
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.services-wrapper img {
+    width: 100px;
+    height: 100px;
+    animation: spin 7s linear infinite; /* Въртене за 5 секунди, безкрайно */
+}
+
 
 .services-wrapper p {
     width: 70%;
