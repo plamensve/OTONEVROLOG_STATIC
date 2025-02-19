@@ -29,7 +29,7 @@
     }
 
     .hero .hero-wrapper .p-1 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
     flex-direction: column;
     line-height: 1.1em;
@@ -118,5 +118,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media (max-width: 350px) {
+    .hero .hero-wrapper .p-1 {
+    font-size: 2em;
+    font-weight: bold;
+    flex-direction: column;
+    line-height: 1.1em;
     }
 }
