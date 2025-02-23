@@ -35,7 +35,7 @@
 @media (max-width: 800px) {
     nav {
         display: flex;
-        flex-direction: column;
+        flex-direction: row-reverse;
         width: 100%;
         justify-content: space-evenly;
         align-items: center;
