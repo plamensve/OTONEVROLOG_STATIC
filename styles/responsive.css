@@ -243,6 +243,7 @@
     /* Когато е активно, менюто се показва */
     .nav-links.active {
         display: flex;
+        width: 94%;
     }
 
 
