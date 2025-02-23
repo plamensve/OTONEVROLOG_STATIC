@@ -1,7 +1,7 @@
 @media  (max-width: 1500px) {
     .navigation {
         display: flex;
-        flex-direction: column;
+
         gap: 20px;
     }
 
@@ -18,6 +18,11 @@
 }
 
 @media (max-width: 1350px) {
+    .navigation {
+        display: flex;
+
+    }
+
     .hero {
         display: flex;
         flex-direction: column;
@@ -30,6 +35,12 @@
         font-size: 3em;
     }
 
+}
+
+@media (max-width: 1050px) {
+    .superdoc {
+        display: none;
+    }
 }
 
 @media (max-width: 800px) {
@@ -48,7 +59,9 @@
         padding-right: 1em;
     }
 
-
+    .hero {
+        padding-top: 0;
+    }
 
     .hero .hero-wrapper .p-1 {
         font-size: 3.5em;
