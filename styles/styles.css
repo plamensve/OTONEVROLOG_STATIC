@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kode+Mono:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Monsieur+La+Doulaise&family=Oleo+Script:wght@400;700&family=Rubik+Wet+Paint&display=swap');
 
 * {
     padding: 0;
@@ -316,6 +317,7 @@ nav ul li a {
     font-weight: bold;
     flex-direction: column;
     line-height: 1.1em;
+    font-family: "Tahoma", serif;
 }
 
 .hero .hero-wrapper .p-2 {
@@ -533,9 +535,44 @@ figcaption button:hover::after {
 }
 
 
+/* --------------- SECTION UNG -------------- */
+
+/* Основни стилове за секцията */
+section.ung {
+    max-width: 4000px;
+    height: auto;
+
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 5em;
+    border-radius: 0.5em;
+    transition: background-color 0.5s ease, height 0.8s ease-in-out;
+    color: black;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
 
 
 
+}
+
+.wrapper img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 10em 12em rgb(240, 245, 248);
+    cursor: pointer;
+}
+
+
+.wrapper p {
+    max-width: 76ch;
+}
 
 
 

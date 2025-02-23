@@ -78,6 +78,10 @@
         margin-top: 3em;
     }
 
+    .main-services {
+        width: 96%;
+    }
+
 }
 
 @media (max-width: 750px) {
