@@ -2,7 +2,6 @@
     .navigation {
         display: flex;
         gap: 20px;
-        height: 155px;
     }
 
     body {
@@ -20,7 +19,6 @@
 @media (max-width: 1350px) {
     .navigation {
         display: flex;
-        height: 165px;
 
     }
 

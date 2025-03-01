@@ -56,6 +56,11 @@ footer {
 
 }
 
+.top-lane-wrapper-right a {
+    color: white;
+    text-decoration: none;
+}
+
 .top-lane {
     display: flex;
     justify-content: space-around;
@@ -101,7 +106,6 @@ footer {
     background-position: center;
     background-size: contain;
     cursor: pointer;
-    height: 115px;
 }
 
 
