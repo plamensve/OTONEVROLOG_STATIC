@@ -87,7 +87,7 @@ footer {
     font-weight: bold;
 }
 
-.top-lane i:not(.fa-facebook):not(.fa-square-instagram) {
+.top-lane i:not(.fa-facebook):not(.fa-instagram) {
     color: #FF6B35;
 }
 
