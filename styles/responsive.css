@@ -10,13 +10,18 @@
     min-height: 100dvh;
     background-color: #F6F6F6;
     flex: 1 1 auto;
-    padding-top: 200px;
+    padding-top: 129px;
 }
 
 
 }
 
 @media (max-width: 1350px) {
+
+    body {
+        padding-top: 129px;
+    }
+
     .navigation {
         display: flex;
     }
@@ -37,7 +42,7 @@
 
 @media (max-width: 1050px) {
     .superdoc {
-        display: flex;
+        display: none;
     }
 }
 
@@ -46,7 +51,7 @@
         display: flex;
         width: 100%;
         align-items: center;
-        padding: 1em 1em 0.1em 1em;
+        padding: 1em 2.5em 0.1em 2.5em;
         gap: 1em;
     }
 
@@ -56,7 +61,7 @@
     }
 
     .hero {
-        padding-top: 0;
+        padding-top: 2em; /* ПРОМЕНЕН НА 0103 */
     }
 
     .hero .hero-wrapper .p-1 {
@@ -109,7 +114,7 @@
     }
 
     .top-lane {
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -127,11 +132,11 @@
         min-height: 100dvh;
         background-color: #F6F6F6;
         flex: 1 1 auto;
-        padding-top: 180px;
+        padding-top: 129px; /* ПРОМЕНЕН НА 0103 */
     }
 
     .hero {
-        padding-top: 0;
+        padding-top: 2em;
     }
 }
 
@@ -154,7 +159,7 @@
 
     .hero {
         height: initial;
-        padding-top: 0;
+        padding-top: 2em; /* ПРОМЕНЕН НА 0103 */
         gap: 20px;
     }
 
@@ -260,8 +265,6 @@
         display: flex;
         width: 94%;
     }
-
-
 
     nav ul {
         gap: 0;
