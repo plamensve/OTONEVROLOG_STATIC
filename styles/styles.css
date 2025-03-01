@@ -582,8 +582,73 @@ section.ung {
     max-width: 76ch;
 }
 
+/* CONTACTS */
 
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 2em 0;
+    flex-wrap: wrap;
+    background-color: #007c8e;
+    color: white;
+}
 
+.contact-info p {
+    line-height: 2em;
+    font-size: 1.2em;
+}
+
+.contacts p {
+    font-size: 1.3em;
+}
+
+/* FOOTER */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #007c8e;
+    color: white;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 26px;
+    color: #FF6B35;
+    font-weight: bold;
+}
+
+.footer-section p, .footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-media p {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.social-media a {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    background-color: #007c8e;
+    padding: 10px;
+    border-top: 1px solid white;
+    color: white;
+}
 
 
 
