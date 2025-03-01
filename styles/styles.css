@@ -101,7 +101,7 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 100px;
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -254,7 +254,7 @@ nav ul li a {
 
 .hero {
     height: auto;
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #007C8E 100%);
     display: flex;
     justify-content: center;
     align-items: center;
