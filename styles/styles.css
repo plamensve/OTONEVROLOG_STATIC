@@ -614,6 +614,19 @@ section.ung {
     flex-wrap: wrap;
 }
 
+@media (max-width: 750px) {
+    .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: space-between;
+    background-color: #007c8e;
+    color: white;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+}
+
 .footer-section {
     flex: 1;
     padding: 10px;
