@@ -648,12 +648,14 @@ section.ung {
     display: flex;
     flex-direction: column;
     gap: 1em;
+
 }
 
 .social-media a {
     margin-right: 10px;
-    font-size: 24px;
+    font-size: 18px;
 }
+
 
 .footer-bottom {
     text-align: center;
