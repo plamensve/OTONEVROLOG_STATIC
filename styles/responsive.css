@@ -19,7 +19,6 @@
 @media (max-width: 1350px) {
     .navigation {
         display: flex;
-
     }
 
     .hero {
@@ -45,9 +44,7 @@
 @media (max-width: 800px) {
     nav {
         display: flex;
-
         width: 100%;
-
         align-items: center;
         padding: 1em 1em 0.1em 1em;
         gap: 1em;
