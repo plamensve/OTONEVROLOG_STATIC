@@ -630,7 +630,7 @@ section.ung {
 
 .footer-section {
     flex: 1;
-    padding: 10px;
+    padding: 0.5em 3em;
 }
 
 .footer-section h3 {
@@ -638,11 +638,14 @@ section.ung {
     font-size: 26px;
     color: #FF6B35;
     font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .footer-section p, .footer-section a {
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .social-media p {
@@ -666,7 +669,10 @@ section.ung {
     color: white;
 }
 
-
+.nav-info {
+    list-style: none;
+    line-height: 1.9em;
+}
 
 
 
