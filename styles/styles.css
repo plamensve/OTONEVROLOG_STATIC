@@ -81,7 +81,7 @@ footer {
     font-size: 1.5em;
 }
 
-.top-lane p  {
+.top-lane p {
     display: flex;
     gap: 0.5em;
     color: white;
@@ -187,7 +187,7 @@ nav ul {
 }
 
 nav ul li {
-     flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 nav ul li a {
@@ -250,7 +250,6 @@ nav ul li a {
 }
 
 
-
 /* ------------------ MAIN SECTION --------------------------- */
 
 .hero {
@@ -267,21 +266,39 @@ nav ul li a {
 }
 
 @keyframes moveDots1 {
-    0% { transform: translate(0, 0); }
-    50% { transform: translate(15px, -15px); }
-    100% { transform: translate(0, 0); }
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(15px, -15px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
 }
 
 @keyframes moveDots2 {
-    0% { transform: translate(0, 0); }
-    50% { transform: translate(-60px, 60px); }
-    100% { transform: translate(0, 0); }
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-60px, 60px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
 }
 
 @keyframes moveDots3 {
-    0% { transform: translate(0, 0); }
-    50% { transform: translate(20px, 5px); }
-    100% { transform: translate(0, 0); }
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(20px, 5px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
 }
 
 
@@ -296,18 +313,17 @@ nav ul li a {
     left: 5%;
     z-index: 2;
     animation: moveDots1 3s infinite ease-in-out alternate;
-    box-shadow:
-        30px 40px 0 #FF6B35,
-        80px 20px 0 #007C8E,
-        130px 90px 0 rgba(255, 107, 53, 0.6),
-        200px 150px 0 rgba(0, 124, 142, 0.5),
-        250px 60px 0 #FF6B35,
-        300px 120px 0 #007C8E,
-        350px 180px 0 rgba(255, 107, 53, 0.3),
-        400px 30px 0 rgba(0, 124, 142, 0.6),
-        450px 100px 0 #FF6B35,
-        500px 50px 0 rgba(0, 124, 142, 0.4),
-        550px 200px 0 #007C8E;
+    box-shadow: 30px 40px 0 #FF6B35,
+    80px 20px 0 #007C8E,
+    130px 90px 0 rgba(255, 107, 53, 0.6),
+    200px 150px 0 rgba(0, 124, 142, 0.5),
+    250px 60px 0 #FF6B35,
+    300px 120px 0 #007C8E,
+    350px 180px 0 rgba(255, 107, 53, 0.3),
+    400px 30px 0 rgba(0, 124, 142, 0.6),
+    450px 100px 0 #FF6B35,
+    500px 50px 0 rgba(0, 124, 142, 0.4),
+    550px 200px 0 #007C8E;
 }
 
 .hero-wrapper {
@@ -348,7 +364,6 @@ nav ul li a {
     color: #FF6B35;
     text-shadow: 2px 2px 5px rgba(255, 107, 53, 0.3);
 }
-
 
 
 .avatar {
@@ -395,8 +410,12 @@ section.services {
 
 
 @keyframes spin {
-    1000% { transform: rotate(0deg); }
-    0% { transform: rotate(360deg); }
+    1000% {
+        transform: rotate(0deg);
+    }
+    0% {
+        transform: rotate(360deg);
+    }
 }
 
 .services-wrapper img {
@@ -435,8 +454,8 @@ section.services h2 {
     margin-bottom: 5em;
 }
 
-.main-services figure {
-    max-width:1200px;
+.main-services figure, .ung-right-side figure {
+    max-width: 1200px;
     width: 94%;
     background-color: #eee;
     border-radius: 0.5em;
@@ -446,13 +465,13 @@ section.services h2 {
     position: relative;
 }
 
-.main-services figure:hover {
+.main-services figure:hover, .ung-right-side figure:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
 
-.main-services figure img {
+.main-services figure img, .ung-right-side figure img {
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
     transition: transform 0.3s ease;
@@ -478,9 +497,32 @@ section.services h2 {
     gap: 1em;
 }
 
+.section-otonevrologia {
+    font-size: 2em;
+    color: #007c8e;
+    margin-bottom: 0.3em;
+}
+
+.hr-section-otonevrologia {
+    width: 50%;
+    height: 0.2em;
+    margin-bottom: 1em;
+    background-color: #007c8e;
+}
+
+.ung-right-side figure figcaption {
+    padding: 1em;
+    max-height: 200px;
+}
+
+
 .main-services figure figcaption p {
     flex-grow: 1;
     font-size: 1.1em;
+    display: -webkit-box;
+    -webkit-line-clamp: 7; /* брой редове */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 figcaption h3 {
@@ -566,7 +608,6 @@ section.ung {
     overflow: hidden;
 
 
-
 }
 
 .wrapper img {
@@ -617,15 +658,15 @@ section.ung {
 
 @media (max-width: 750px) {
     .footer-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    justify-content: space-between;
-    background-color: #007c8e;
-    color: white;
-    padding: 20px;
-    flex-wrap: wrap;
-}
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        justify-content: space-between;
+        background-color: #007c8e;
+        color: white;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
 }
 
 .footer-section {
@@ -698,14 +739,15 @@ section.ung {
 
 .ung-section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    max-width: 1200px;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    max-width: 1300px;
     width: 94%;
     height: auto;
     margin: 0 auto 5em;
     cursor: pointer;
+    gap: 1em;
 }
 
 .ung-section-hero {
@@ -714,6 +756,32 @@ section.ung {
     max-width: 115ch;
     border-bottom: 2px solid #007c8e;
 }
+
+.ung-section-hr {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрира по хоризонтала */
+    justify-content: center; /* По желание – центрира по вертикала */
+    text-align: center; /* Центрира текста вътре в h3 */
+    margin: 0.5em auto; /* Центрира самия контейнер */
+}
+
+.ung-right-side {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    gap: 3em;
+}
+
+.ung-right-side figure img {
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 500px; /* Задай предпочитаната ширина */
+    height: 230px;     /* Задай фиксирана височина */
+    object-fit: cover; /* Подрязва изображението, за да запази съотношението */
+    aspect-ratio: 1 / 1; /* Уверява квадратна форма */
+}
+
 
 .ung-section-hero-hero {
     font-size: 1.2em;
@@ -740,15 +808,61 @@ section.ung {
     padding-bottom: 0.4em;
 }
 
-.ung-section img {
+.ung-section-hero img {
     max-width: 800px;
     width: 100%;
     margin-bottom: 2.7em;
     box-shadow: rgba(0, 124, 142, 0.4) -5px 5px,
-            rgba(0, 124, 142, 0.3) -10px 10px,
-            rgba(0, 124, 142, 0.2) -15px 15px,
-            rgba(0, 124, 142, 0.1) -20px 20px,
-            rgba(0, 124, 142, 0.05) -25px 25px;
+    rgba(0, 124, 142, 0.3) -10px 10px,
+    rgba(0, 124, 142, 0.2) -15px 15px,
+    rgba(0, 124, 142, 0.1) -20px 20px,
+    rgba(0, 124, 142, 0.05) -25px 25px;
+}
+
+@media (max-width: 1200px) {
+    .ung-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 1200px;
+        width: 94%;
+        height: auto;
+        margin: 0 auto 5em;
+        cursor: pointer;
+        gap: 2.5em;
+    }
+
+    .ung-right-side {
+        display: flex;
+        flex-direction: row;
+        max-width: 550px;
+    }
+
+
+}
+
+@media (max-width: 650px) {
+    .ung-right-side {
+        display: flex;
+        flex-direction: column;
+        max-width: 450px;
+    }
+
+    .ung-section {
+        gap: 2em;
+    }
+}
+
+@media (max-width: 550px) {
+    .main-services figure figcaption p {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis; /* за добавяне на троеточие */
+        max-width: 100%;
+    }
 }
 
 
