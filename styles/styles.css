@@ -870,13 +870,14 @@ section.ung {
 .main-services-oto {
     display: flex;
     flex-direction: column;
+    width: 100%;
     align-items: center; /* Центрира по хоризонтала */
     gap: 2rem;
     padding: 2rem 0;
 }
 
 .main-services-oto details {
-    width: 100%;
+    width: 70%;
     max-width: 100%;
     border: 1px solid #ccc;
     border-radius: 12px;
@@ -899,6 +900,8 @@ section.ung {
     list-style: none;
     position: relative;
     padding-right: 1.5rem;
+    display: block;
+    width: 100%;
 }
 
 .main-services-oto summary::after {
