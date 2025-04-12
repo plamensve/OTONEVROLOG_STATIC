@@ -902,7 +902,6 @@ section.ung {
 }
 
 .main-services summary::after {
-    content: '▾';
     position: absolute;
     right: 0;
     top: 0;
