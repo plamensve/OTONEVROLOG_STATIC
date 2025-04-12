@@ -870,18 +870,19 @@ section.ung {
 .main-services {
     display: flex;
     flex-direction: column;
+    align-items: center; /* Центрира по хоризонтала */
     gap: 2rem;
     padding: 2rem 0;
 }
 
 .main-services details {
+    width: 70%;
+    max-width: 100%;
     border: 1px solid #ccc;
     border-radius: 12px;
-    padding: 1rem;
+    padding: 1.3rem;
     background-color: #fefefe;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-    transition: box-shadow 0.3s ease, background-color 0.3s ease;
-    width: 100%; /* важно за респонсив */
     box-sizing: border-box;
 }
 
