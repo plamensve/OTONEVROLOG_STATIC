@@ -869,7 +869,7 @@ section.ung {
 
 .main-services {
     display: flex;
-    flex-direction: column;
+
     align-items: center; /* Центрира по хоризонтала */
     gap: 2rem;
     padding: 2rem 0;
