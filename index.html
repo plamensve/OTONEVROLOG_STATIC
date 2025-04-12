@@ -4,23 +4,30 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BF0FPQ3HKR"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'G-BF0FPQ3HKR');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-BF0FPQ3HKR');
     </script>
 
-        <!-- Hotjar Tracking Code for https://otonevrolog.bg -->
+    <!-- Hotjar Tracking Code for https://otonevrolog.bg -->
     <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:5293796,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {hjid: 5293796, hjsv: 6};
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
             a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -34,151 +41,180 @@
 </head>
 <body>
 
-    <header>
-        <div class="top-lane">
-            <div class="top-lane-wrapper-left">
-                <p><span id="fa-location"><i class="fa-solid fa-location-dot"></i></span><span id="location-info">Русе, ул. "Воден" 6</span></p>
-                <p class="email"><span id="fa-envelope"><i class="fa-solid fa-envelope"></i></span><span id="envelope-info"> dr_kristina_valentinova@abv.bg</span></p>
-                <p><span id="fa-business-time"><i class="fa-solid fa-phone"></i></span><span id="business-time">(+359) 87 7 127 714</span></p>
-            </div>
-            <div class="top-lane-wrapper-right">
-                <p><a href="https://www.facebook.com/ung.atanasova.rousse" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a></p>
-                <p><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></p>
+<header>
+    <div class="top-lane">
+        <div class="top-lane-wrapper-left">
+            <p><span id="fa-location"><i class="fa-solid fa-location-dot"></i></span><span id="location-info">Русе, ул. "Воден" 6</span>
+            </p>
+            <p class="email"><span id="fa-envelope"><i class="fa-solid fa-envelope"></i></span><span id="envelope-info"> dr_kristina_valentinova@abv.bg</span>
+            </p>
+            <p><span id="fa-business-time"><i class="fa-solid fa-phone"></i></span><span id="business-time">(+359) 87 7 127 714</span>
+            </p>
+        </div>
+        <div class="top-lane-wrapper-right">
+            <p><a href="https://www.facebook.com/ung.atanasova.rousse" target="_blank"><i
+                    class="fa-brands fa-facebook"></i> Facebook</a></p>
+            <p><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></p>
+        </div>
+    </div>
+    <div class="navigation">
+        <nav>
+            <a href="index.html"><img src="images/logo-transparent-cropped.png" alt=""></a>
+            <button class="hamburger" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </nav>
+        <ul class="nav-links">
+            <li><a href="index.html">НАЧАЛО</a></li>
+            <li><a href="pages/otonevrologiya.html">ОТОНЕВРОЛОГИЯ</a></li>
+            <li><a href="pages/ung.html">УНГ</a></li>
+            <li><a href="pages/contacts.html">КОНТАКТИ</a></li>
+        </ul>
+        <div class="right-side-wrapper">
+            <!--                <div class="phone-call">-->
+            <!--                    <p>Запазете час на телефон</p>-->
+            <!--                    <p><span id="fa-business-time-1"><i class="fa-solid fa-phone"></i></span><span id="fa-business-time-2">(+359) 87 7 127 714</span></p>-->
+            <!--                </div>-->
+            <div class="superdoc">
+                <a href="https://superdoc.bg/lekar/kristina-atanasova" target="_blank">Запазете час в Superdoc</a>
             </div>
         </div>
-        <div class="navigation">
-            <nav>
-                <a href="index.html"><img src="images/logo-transparent-cropped.png" alt=""></a>
-                <button class="hamburger" aria-label="Меню">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+    </div>
+</header>
 
-            </nav>
-            <ul class="nav-links">
+<main>
+    <div class="hero">
+        <div class="hero-wrapper">
+            <p class="p-1">Най-доброто лечение за <span id="healthy-life">здравословен живот</span></p>
+            <p class="p-2">Специалист по ушно-носно, гърлени болести и отоневрология</p>
+            <a href="https://superdoc.bg/lekar/kristina-atanasova" target="_blank">
+                <button class="superdoc-non-hover">ЗАПАЗИ ЧАС В SUPERDOC</button>
+            </a>
+        </div>
+        <div class="avatar">
+            <img src="images/test.jpg" alt="">
+        </div>
+    </div>
+    <section class="services">
+        <div class="services-wrapper">
+            <img src="images/favicon.ico" alt="">
+            <h2>Нашите услуги</h2>
+            <p id="sw-main-p">Грижата за вашето здраве е наш приоритет!</p>
+            <p id="span-bold">Предлагаме широка гама от медицински услуги, насочени към диагностика и лечение на
+                ушно-носно-гърлени заболявания и отоневрология</p>
+        </div>
+        <div class="main-services">
+            <figure>
+                <img src="images/videonistagmografiq.png" alt="Trulli" style="width: 100%">
+                <figcaption>
+                    <h3>Видеонистагмография</h3>
+                    <p>Видеонистагмография (ВНГ) - това е съвременен компютризиран метод за регистрация и анализ на очни
+                        движения, при който посредством една или две видеокамери с висока резолюция, монтирани в очила,
+                        се записват движенията на очите по време на изпълнение на различни тестове. Програмата на
+                        компютъра извършва количествен анализ на нистагмените реакции със специализиран софтуер.
+                        Предимствата на този метод са: възможност за анализ на очните движения във всички равнини на
+                        пространството и висока „чистота” на записа на нистагмените реакции.</p>
+                    <button>Информация</button>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/video.webp" alt="Trulli" style="width:100%">
+                <figcaption>
+                    <h3>Стабилография</h3>
+                    <p>Все по-широко приложение в клиничната невроотологична практика намира компютърната стабилография
+                        (постурография).Това е метод за изследване на равновесната функция на човека при изправен стоеж.
+                        Провежда се със специализирана апаратура – компютризирана стабилографска система (стабилограф).
+                        Промяната в равновесното положение на тялото за определен период от време се измерва чрез
+                        регистриране на моментното преместване във времето на проекцията на общия център на тежестта
+                        (ОЦТ) на тялото в хоризонталната равнина. Стандартният клиничен тест включва изследване на
+                        равновесието при спокоен изправен стоеж съответно 30 сек. с отворени и 30 сек. със затворени
+                        очи.</p>
+                    <button>Информация</button>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <a href="pages/contacts.html"></a>
+                <img src="images/video.webp" alt="Trulli" style="width:100%">
+                <figcaption>
+                    <h3>V Hit Test</h3>
+                    <p>Съвременен неинвазивен метод за оценка на вестибуларната функция. Той осигурява бързи и обективни
+                        измервания на вестибуларно-окуларния рефлекс. С него се оценяват пациентите със световъртеж и се
+                        определя дали световъртежът е свързан с вестибуларно нарушение. Изследват се двата вестибуларни
+                        апарата поотделно.
+                        Видеолрингоскоп
+                        Съвременен метод за диагностика на заболяванията на носа и ларинкса с помоща на ендоскопска
+                        техника (флексибилна с камера), което предполага изключително точно и високо ниво на диагностика
+                        на заболяванията на горни дихателни пътища. Записът от изследването може да бъде предоставен на
+                        пациента при необходимост.
+                    </p>
+                    <button>Информация</button>
+                </figcaption>
+
+            </figure>
+        </div>
+    </section>
+    <section class="ung-section">
+        <img src="images/ent.jpg" alt="ung">
+        <div class="ung-section-hero">
+            <h2 class="ung-section-hero-title">Д-р Кристина Атанасова</h2>
+            <div class="ung-section-hero-hero">
+                <p>Специалист в диагностиката и лечението на заболявания на уши, нос и гърло, осигурявайки професионална
+                    и персонализирана грижа за всеки пациент.</p>
+                <p>Доверете се на опита и съвременните методи за лечение.</p>
+            </div>
+            <div class="ung-section-hero-contact">
+                <p>📅 Запазете час още днес!</p>
+                <p>📍 гр. Русе, ул. "Воден" No.6</p>
+                <p>📞 (+359) 87 7 127 714</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section nav-info">
+            <h3>Навигация</h3>
+            <ul class="nav-info">
                 <li><a href="index.html">НАЧАЛО</a></li>
                 <li><a href="pages/otonevrologiya.html">ОТОНЕВРОЛОГИЯ</a></li>
                 <li><a href="pages/ung.html">УНГ</a></li>
                 <li><a href="pages/contacts.html">КОНТАКТИ</a></li>
             </ul>
-            <div class="right-side-wrapper">
-<!--                <div class="phone-call">-->
-<!--                    <p>Запазете час на телефон</p>-->
-<!--                    <p><span id="fa-business-time-1"><i class="fa-solid fa-phone"></i></span><span id="fa-business-time-2">(+359) 87 7 127 714</span></p>-->
-<!--                </div>-->
-                <div class="superdoc">
-                    <a href="https://superdoc.bg/lekar/kristina-atanasova" target="_blank">Запазете час в Superdoc</a>
-                </div>
-            </div>
         </div>
-    </header>
 
-    <main>
-        <div class="hero">
-            <div class="hero-wrapper">
-                <p class="p-1">Най-доброто лечение за <span id="healthy-life">здравословен живот</span></p>
-                <p class="p-2">Специалист по ушно-носно, гърлени болести и отоневрология</p>
-                <a href="https://superdoc.bg/lekar/kristina-atanasova" target="_blank"><button class="superdoc-non-hover">ЗАПАЗИ ЧАС В  SUPERDOC</button></a>
-            </div>
-            <div class="avatar">
-                <img src="images/test.jpg" alt="">
-            </div>
+        <div class="footer-section contact-info">
+            <h3>Контакти</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Русе, ул. "Воден" 6</p>
+            <p><i class="fa-solid fa-envelope"></i> dr_kristina_valentinova@abv.bg</p>
+            <p><i class="fa-solid fa-phone"></i> (+359) 87 7 127 714</p>
         </div>
-        <section class="services">
-            <div class="services-wrapper">
-                <img src="images/favicon.ico" alt="">
-                <h2>Нашите услуги</h2>
-                <p id="sw-main-p">Грижата за вашето здраве е наш приоритет!</p>
-                <p id="span-bold">Предлагаме широка гама от медицински услуги, насочени към диагностика и лечение на ушно-носно-гърлени заболявания и отоневрология</p>
-            </div>
-            <div class="main-services">
-                <figure>
-                    <img src="images/videonistagmografiq.png" alt="Trulli" style="width: 100%">
-                    <figcaption>
-                        <h3>Видеонистагмография</h3>
-                        <p>Видеонистагмография (ВНГ) е диагностичен метод, използван за изследване на вестибуларната функция и нарушенията на равновесието. Той записва и анализира движенията на очите с помощта на инфрачервена камера, прикрепена към специални очила.</p>
-                        <button>Информация</button>
-                    </figcaption>
-                </figure>
 
-                <figure>
-                    <img src="images/video.webp" alt="Trulli" style="width:100%">
-                    <figcaption>
-                        <h3>Стабилография</h3>
-                        <p>Стабилографията е диагностичен метод, използван за оценка на баланса и стабилността на тялото. Тя измерва колебанията на тежестния център на пациента, докато стои върху специална платформа (стабилометрична платформа).</p>
-                        <button>Информация</button>
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <a href="pages/contacts.html"></a>
-                    <img src="images/video.webp" alt="Trulli" style="width:100%">
-                    <figcaption>
-                        <h3>V Hit Test</h3>
-                        <p>Диагностичен тест за оценка на функцията на вестибуларния апарат, по-специално на вестибуло-окуларния рефлекс (VOR).</p>
-                        <button>Информация</button>
-                    </figcaption>
-
-                </figure>
-            </div>
-        </section>
-        <section class="ung-section">
-            <img src="images/ent.jpg" alt="ung">
-            <div class="ung-section-hero">
-                <h2 class="ung-section-hero-title">Д-р Кристина Атанасова</h2>
-                <div class="ung-section-hero-hero">
-                    <p>Специалист в диагностиката и лечението на заболявания на уши, нос и гърло, осигурявайки професионална и персонализирана грижа за всеки пациент.</p>
-                    <p>Доверете се на опита и съвременните методи за лечение.</p>
-                </div>
-                <div class="ung-section-hero-contact">
-                    <p>📅 Запазете час още днес!</p>
-                    <p>📍 гр. Русе, ул. "Воден" No.6</p>
-                    <p>📞 (+359) 87 7 127 714</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section nav-info">
-                <h3>Навигация</h3>
-                <ul class="nav-info">
-                <li><a href="index.html">НАЧАЛО</a></li>
-                <li><a href="pages/otonevrologiya.html">ОТОНЕВРОЛОГИЯ</a></li>
-                <li><a href="pages/ung.html">УНГ</a></li>
-                <li><a href="pages/contacts.html">КОНТАКТИ</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section contact-info">
-                <h3>Контакти</h3>
-                <p><i class="fa-solid fa-location-dot"></i> Русе, ул. "Воден" 6</p>
-                <p><i class="fa-solid fa-envelope"></i> dr_kristina_valentinova@abv.bg</p>
-                <p><i class="fa-solid fa-phone"></i> (+359) 87 7 127 714</p>
-            </div>
-
-            <div class="footer-section social-media">
-                <h3>Последвайте ни</h3>
-                <p>
-                    <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
-                </p>
-            </div>
-
-            <div class="footer-section google-map">
-                <h3>Нашата локация</h3>
-                <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.3848!2d25.95502!3d43.83766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ae6084b4c5cddd%3A0xf0bb1c8f318e2a2a!2sul.%20%22Voden%22%206%2C%207000%20Ruse%2C%20Bulgaria!5e0!3m2!1sen!2sbg!4v1618462821374!5m2!1sen!2sbg"
-                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
-            </div>
+        <div class="footer-section social-media">
+            <h3>Последвайте ни</h3>
+            <p>
+                <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            </p>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Д-р Кристина Атанасова | Всички права запазени.</p>
+
+        <div class="footer-section google-map">
+            <h3>Нашата локация</h3>
+            <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.3848!2d25.95502!3d43.83766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ae6084b4c5cddd%3A0xf0bb1c8f318e2a2a!2sul.%20%22Voden%22%206%2C%207000%20Ruse%2C%20Bulgaria!5e0!3m2!1sen!2sbg!4v1618462821374!5m2!1sen!2sbg"
+                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
         </div>
-    </footer>
-    <script src="js/hamburger.js" defer></script>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Д-р Кристина Атанасова | Всички права запазени.</p>
+    </div>
+</footer>
+<script src="js/hamburger.js" defer></script>
 </body>
 </html>
