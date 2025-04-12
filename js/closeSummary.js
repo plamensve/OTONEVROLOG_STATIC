@@ -1,4 +1,4 @@
-document.querySelectorAll(".main-services details").forEach((detail) => {
+document.querySelectorAll(".main-services-oto details").forEach((detail) => {
     detail.addEventListener("click", function (e) {
         // Игнорира клика, ако вече е в <summary>
         if (e.target.tagName.toLowerCase() !== "summary") {
