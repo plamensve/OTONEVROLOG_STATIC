@@ -516,14 +516,7 @@ section.services h2 {
 }
 
 
-.main-services figure figcaption p {
-    flex-grow: 1;
-    font-size: 1.1em;
-    display: -webkit-box;
-    -webkit-line-clamp: 7; /* брой редове */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
+
 
 figcaption h3 {
     color: #007C8E;
@@ -854,16 +847,7 @@ section.ung {
     }
 }
 
-@media (max-width: 550px) {
-    .main-services figure figcaption p {
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis; /* за добавяне на троеточие */
-        max-width: 100%;
-    }
-}
+
 
 
 
