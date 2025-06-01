@@ -211,9 +211,9 @@ header {
 .nav-cta {
     background: var(--gradient-primary);
     color: var(--white) !important;
-    padding: 1.2rem 2.4rem !important;
-    border-radius: 3rem !important;
-    font-weight: 600 !important;
+    padding: 0.8rem 1.5rem !important;
+    border-radius: 2rem !important;
+    font-weight: 500 !important;
     transition: var(--transition);
 }
 
@@ -352,7 +352,11 @@ header {
 
     /* Adjust social links positioning */
     .social-links {
-        display: none; /* Hide on mobile */
+        margin-right: 8px;
+    }
+
+    .phone-link {
+        margin-right: auto;
     }
 }
 
@@ -371,6 +375,10 @@ header {
 
     .hamburger {
         margin-left: 1rem;
+    }
+
+    .nav-cta {
+        display: none;
     }
 }
 
