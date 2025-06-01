@@ -569,6 +569,10 @@ section.fade-in.visible {
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
+.service-card p {
+    padding-bottom: 1.5em;
+}
+
 .service-card:hover,
 .info-item:hover {
     transform: translateY(-5px);
