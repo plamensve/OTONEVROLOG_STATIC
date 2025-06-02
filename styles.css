@@ -1095,6 +1095,14 @@ section.fade-in.visible {
     flex-shrink: 0;
 }
 
+.service-icon .service-image,
+.card-icon .service-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+
 .card-icon i {
     font-size: 2.4rem;
     color: var(--white);
@@ -1350,6 +1358,13 @@ section.fade-in.visible {
     font-size: 3.2rem;
     position: relative;
     overflow: hidden;
+}
+
+.service-icon .service-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem;
 }
 
 .service-icon::after {
